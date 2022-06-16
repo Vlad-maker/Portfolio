@@ -5,9 +5,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+  background-color: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+div,h1, h2, h3, h4, p ,li, ul, form, span, input, img, section, article, nav, main, header {
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: rgb(6, 192, 115);
 }
