@@ -3,16 +3,17 @@ import styled from 'styled-components';
 import logo from '../../logo.svg';
 import tg from '../../Images/tg.svg';
 import git from '../../Images/git.svg';
-import { useHistory, Link } from 'react-router-dom';
+import { useHistory, Link} from 'react-router-dom';
 
 function Header() {
 
   const history = useHistory();
+
   const goMainPage = () => {
     history.push(`/`);
   };
 
-  const links = ["Коммерческие проекты", "Pet-проекты", "Контакты"];
+  // const links = ["Коммерческие проекты", "Pet-проекты", "Контакты"];
 
   return (
     <HeaderBlock>
@@ -20,9 +21,12 @@ function Header() {
       <HeaderLogo src={logo} onClick={goMainPage}/>
 
       <HeaderLinks>
-        {links.map((link) => (
+        {/* {links.map((link) => (
             <HeaderLinkName>{link}</HeaderLinkName>
-        ))}
+        ))} */}
+        <HeaderLinkName to='/projects'>Projects</HeaderLinkName>
+        <HeaderLinkName to='/pet-projects'>Pet-projects</HeaderLinkName>
+        <HeaderLinkName to='/contacts'>Contact</HeaderLinkName>
       </HeaderLinks>
 
       <HeaderSocials>
@@ -50,9 +54,10 @@ const HeaderBlock = styled.section`
 const HeaderLogo = styled.img `
   max-height: 50px;
   max-width: 50px;
+  cursor: pointer;
 `;
 
-const HeaderLinks = styled.ul `
+const HeaderLinks = styled.nav `
     max-width: 550px;
     width: 100%;
     display: flex;
@@ -61,9 +66,11 @@ const HeaderLinks = styled.ul `
     padding: 0;
 `;
 
-const HeaderLinkName = styled.li `
+const HeaderLinkName = styled(Link) `
     font-size: 22px;
     cursor: pointer;
+    text-decoration: none;
+    color: #f9f9f9;
 `;
 
 const HeaderSocials = styled.ul `
