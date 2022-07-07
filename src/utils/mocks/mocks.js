@@ -43,8 +43,4 @@ export const mockSlots = [
     slotId: '11',
     name: 'Figma',
   },
-  {
-    slotId: '12',
-    name: 'BEM',
-  },
 ]

@@ -16,8 +16,8 @@ code {
     monospace;
 }
 
-div,h1, h2, h3, h4, p ,li, ul, form, span, input, img, section, article, nav, main, header {
+/* div,h1, h2, h3, h4, p ,li, ul, form, span, input, img, section, article, nav, main, header {
     outline-width: 1px;
     outline-style: solid;
     outline-color: rgb(6, 192, 115);
-}
+} */

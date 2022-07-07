@@ -1,7 +1,21 @@
 import React, {useState} from 'react';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import styled from 'styled-components';
-import Git from '../../Images/git.svg'
+import MatrixPage from './MatrixPage';
+
+import git from '../../Images/git.svg';
+import react from '../../Images/react-js.svg';
+import js from '../../Images/js.svg';
+import css from '../../Images/css.svg';
+import html from '../../Images/html.svg';
+import redux from '../../Images/redux.svg';
+import node from '../../Images/node.svg';
+import mongo from '../../Images/mongo.svg';
+import sass from '../../Images/sass.svg';
+import vscode from '../../Images/vs.svg';
+import figma from '../../Images/figma.svg';
+
+import photo from '../../Images/photo.jpg'
 
 
 const MainPage = ({mockSlots}) => {
@@ -18,7 +32,10 @@ const MainPage = ({mockSlots}) => {
 
   return (
     <MainBlock>
+      <div style={{display: 'flex'}}>
+      <PhotoBlock src={photo}/>
 
+      <div>
       <HeadingBlock>
         Hi, I'm Vlad, frontend-developer !
       </HeadingBlock>
@@ -45,7 +62,20 @@ const MainPage = ({mockSlots}) => {
                             <SlotsItem ref={provided.innerRef}
                                 {...provided.draggableProps}
                                 {...provided.dragHandleProps}>
-                                <SlotItemLogo src={name === 'Git' ? Git : null}/>
+                                <SlotItemLogo
+                                  src={name === 'Git' ? git :
+                                       name === 'ReactJS' ? react :
+                                       name === 'JS' ? js :
+                                       name === 'CSS' ? css :
+                                       name === 'HTML' ? html :
+                                       name === 'Redux' ? redux :
+                                       name === 'NodeJS' ? node :
+                                       name === 'MongoDB' ? mongo :
+                                       name === 'SCSS' ? sass :
+                                       name === 'Figma' ? figma :
+                                       name === 'VSCode' ? vscode :
+                                  null}
+                                />
                             </SlotsItem>
                           )}
                         </Draggable>
@@ -57,6 +87,10 @@ const MainPage = ({mockSlots}) => {
             </Droppable>
           </DragDropContext>
       </SlotsBlock>
+      </div>
+      </div>
+
+      <MatrixPage/>
 
     </MainBlock>
   )
@@ -67,7 +101,8 @@ export default MainPage
 const MainBlock = styled.section`
   max-width: 1440px;
   margin-top: 40px;
-  // display: flex;
+  display: flex;
+  flex-direction: column;
   // align-items: center;
   // justify-content: space-between;
 `;
@@ -76,13 +111,14 @@ const HeadingBlock = styled.h2 `
   margin: 0 0 20px 0;
   color: #fff;
   max-width: 720px;
+  font-size: 30px;
 
   animation-duration: 3s;
   animation-name: slidein;
 
   @keyframes slidein {
     from {
-      margin-left: 80%;
+      margin-left: 35%;
       width: 200%;
     }
 
@@ -95,12 +131,13 @@ const HeadingBlock = styled.h2 `
 const TextBlock = styled.p `
   margin: 0 0 20px 0;
   max-width: 720px;
+  font-size: 22px;
   animation-duration: 4s;
   animation-name: slidein;
 
   @keyframes slidein {
     from {
-      margin-left: 80%;
+      margin-left: 35%;
       width: 200%;
     }
 
@@ -111,10 +148,11 @@ const TextBlock = styled.p `
 `
 const SlotsBlock = styled.div `
   margin: 0 0 20px 0;
+  max-width 720px;
 `
 const SlotsList = styled.ul`
   min-height: 45px;
-  padding: 0;
+  padding: 0 auto;
   display: flex;
   max-width: 720px;
 `
@@ -134,5 +172,20 @@ const SlotsItem = styled.div `
 `
 
 const SlotItemLogo = styled.img`
+  width: 56px;
+  height: 56px;
+  padding: 2px;
+  background-size: contain;
 
+  // :hover {
+  //   transform: scale(1.2);
+  // }
+`
+const PhotoBlock = styled.img`
+  width: 190px;
+  height: 190px;
+  margin: 0 40px 0 0;
+  border-radius: 30px;
+  object-fit: cover;
+  opacity: 0.8
 `

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import logo from '../../logo.svg';
+import react from '../../Images/react.svg';
 import tg from '../../Images/tg.svg';
 import git from '../../Images/git.svg';
 import { useHistory, Link} from 'react-router-dom';
@@ -18,7 +18,7 @@ function Header() {
   return (
     <HeaderBlock>
 
-      <HeaderLogo src={logo} onClick={goMainPage}/>
+      <HeaderLogo src={react} onClick={goMainPage}/>
 
       <HeaderLinks>
         {/* {links.map((link) => (
@@ -26,7 +26,7 @@ function Header() {
         ))} */}
         <HeaderLinkName to='/projects'>Projects</HeaderLinkName>
         <HeaderLinkName to='/pet-projects'>Pet-projects</HeaderLinkName>
-        <HeaderLinkName to='/contacts'>Contact</HeaderLinkName>
+        <HeaderLinkName to='/contacts'>About Me</HeaderLinkName>
       </HeaderLinks>
 
       <HeaderSocials>
