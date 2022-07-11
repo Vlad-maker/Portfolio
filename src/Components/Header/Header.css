@@ -1,0 +1,15 @@
+.nav__link {
+  font-size: 22px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #f9f9f9;
+}
+
+.nav__link:hover {
+  color: #b6c0c2;
+  transition: linear 0.2s;
+}
+
+.nav__link_active {
+  color: #63dba9;
+}

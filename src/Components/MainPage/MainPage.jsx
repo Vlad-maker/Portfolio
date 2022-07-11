@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import styled from 'styled-components';
-import MatrixPage from './MatrixPage';
+import './Animation.css'
 
 import git from '../../Images/git.svg';
 import react from '../../Images/react-js.svg';
@@ -32,65 +32,79 @@ const MainPage = ({mockSlots}) => {
 
   return (
     <MainBlock>
-      <div style={{display: 'flex'}}>
-      <PhotoBlock src={photo}/>
 
-      <div>
-      <HeadingBlock>
-        Hi, I'm Vlad, frontend-developer !
-      </HeadingBlock>
+        <PhotoBlock src={photo}/>
 
-      <TextBlock>
-        I specialize in building interface for web applications. In my work I mostly use React with Redux and Styled-components.
-        Figma, Git and VSCode are also indispensable assistants in my work.
-      </TextBlock>
+        <InfoBlock>
+          <HeadingBlock>
+            Hi, I'm Vlad, frontend-developer !
+          </HeadingBlock>
 
-      <TextBlock>
-        Technologies, tools and practices that I also use:
-      </TextBlock>
+          <TextBlock>
+            I specialize in building interface for web applications. In my work I mostly use React with Redux and Styled-components.
+            Figma, Git and VSCode are also indispensable assistants in my work.
+          </TextBlock>
 
-      <SlotsBlock>
-         <DragDropContext onDragEnd={handleOnDragEnd}>
-            <Droppable droppableId="characters" direction="horizontal">
-              {(provided) => (
-                <SlotsList {...provided.droppableProps}
-                    ref={provided.innerRef}>
-                    {slots.map(({slotId, name}, index) => {
-                      return (
-                        <Draggable key={slotId} draggableId={slotId} index={index}>
-                          {(provided) => (
-                            <SlotsItem ref={provided.innerRef}
-                                {...provided.draggableProps}
-                                {...provided.dragHandleProps}>
-                                <SlotItemLogo
-                                  src={name === 'Git' ? git :
-                                       name === 'ReactJS' ? react :
-                                       name === 'JS' ? js :
-                                       name === 'CSS' ? css :
-                                       name === 'HTML' ? html :
-                                       name === 'Redux' ? redux :
-                                       name === 'NodeJS' ? node :
-                                       name === 'MongoDB' ? mongo :
-                                       name === 'SCSS' ? sass :
-                                       name === 'Figma' ? figma :
-                                       name === 'VSCode' ? vscode :
-                                  null}
-                                />
-                            </SlotsItem>
-                          )}
-                        </Draggable>
-                      );
-                    })}
-                  {provided.placeholder}
-                </SlotsList>
-              )}
-            </Droppable>
-          </DragDropContext>
-      </SlotsBlock>
-      </div>
-      </div>
+          <TextBlock>
+            Technologies, tools and practices that I also use:
+          </TextBlock>
 
-      <MatrixPage/>
+          <SlotsBlock>
+            <DragDropContext onDragEnd={handleOnDragEnd}>
+                <Droppable droppableId="characters" direction="horizontal">
+                  {(provided) => (
+                    <SlotsList {...provided.droppableProps}
+                        ref={provided.innerRef}>
+                        {slots.map(({slotId, name}, index) => {
+                          return (
+                            <Draggable key={slotId} draggableId={slotId} index={index}>
+                              {(provided) => (
+                                <SlotsItem ref={provided.innerRef}
+                                    {...provided.draggableProps}
+                                    {...provided.dragHandleProps}>
+                                    <SlotItemLogo
+                                      src={name === 'Git' ? git :
+                                          name === 'ReactJS' ? react :
+                                          name === 'JS' ? js :
+                                          name === 'CSS' ? css :
+                                          name === 'HTML' ? html :
+                                          name === 'Redux' ? redux :
+                                          name === 'NodeJS' ? node :
+                                          name === 'MongoDB' ? mongo :
+                                          name === 'SCSS' ? sass :
+                                          name === 'Figma' ? figma :
+                                          name === 'VSCode' ? vscode :
+                                      null}
+                                    />
+                                </SlotsItem>
+                              )}
+                            </Draggable>
+                          );
+                        })}
+                      {provided.placeholder}
+                    </SlotsList>
+                  )}
+                </Droppable>
+              </DragDropContext>
+          </SlotsBlock>
+        </InfoBlock>
+
+        <div>
+            <div className="spinner-box">
+              <div className="blue-orbit leo"/>
+
+              <div className="green-orbit leo"/>
+
+              <div className="red-orbit leo"/>
+
+              <div className="white-orbit  leo"/>
+              <div className="white-orbit-2  leo"/>
+              <div className="white-orbit-3  leo"/>
+            </div>
+        </div>
+
+
+
 
     </MainBlock>
   )
@@ -100,54 +114,27 @@ export default MainPage
 
 const MainBlock = styled.section`
   max-width: 1440px;
-  margin-top: 40px;
+  margin-top: 120px;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   // align-items: center;
-  // justify-content: space-between;
+  justify-content: space-between;
 `;
 
 const HeadingBlock = styled.h2 `
-  margin: 0 0 20px 0;
+  margin: 0 0 30px 0;
   color: #fff;
   max-width: 720px;
   font-size: 30px;
-
-  animation-duration: 3s;
-  animation-name: slidein;
-
-  @keyframes slidein {
-    from {
-      margin-left: 35%;
-      width: 200%;
-    }
-
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
 `
 
 const TextBlock = styled.p `
-  margin: 0 0 20px 0;
+  margin: 0 0 30px 0;
   max-width: 720px;
   font-size: 22px;
-  animation-duration: 4s;
-  animation-name: slidein;
-
-  @keyframes slidein {
-    from {
-      margin-left: 35%;
-      width: 200%;
-    }
-
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
 `
 const SlotsBlock = styled.div `
-  margin: 0 0 20px 0;
+  margin: 0;
   max-width 720px;
 `
 const SlotsList = styled.ul`
@@ -161,7 +148,7 @@ const SlotsItem = styled.div `
   // padding: 0px 2px 0 2px;
   position: relative;
   list-style: none;
-  min-width: 45px;
+  min-width: 47px;
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 70%;
@@ -172,20 +159,20 @@ const SlotsItem = styled.div `
 `
 
 const SlotItemLogo = styled.img`
-  width: 56px;
-  height: 56px;
-  padding: 2px;
+  width: 50px;
+  height: 50px;
+  // padding: 2px;
   background-size: contain;
-
-  // :hover {
-  //   transform: scale(1.2);
-  // }
 `
 const PhotoBlock = styled.img`
-  width: 190px;
-  height: 190px;
-  margin: 0 40px 0 0;
+  width: 290px;
+  height: 290px;
+  margin: 0;
   border-radius: 30px;
   object-fit: cover;
   opacity: 0.8
+`
+
+const InfoBlock = styled.div`
+
 `

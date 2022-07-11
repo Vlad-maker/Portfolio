@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import react from '../../Images/react.svg';
 import tg from '../../Images/tg.svg';
 import git from '../../Images/git.svg';
-import { useHistory, Link} from 'react-router-dom';
+import { useHistory, NavLink} from 'react-router-dom';
+import './Header.css';
 
 function Header() {
 
@@ -24,9 +25,9 @@ function Header() {
         {/* {links.map((link) => (
             <HeaderLinkName>{link}</HeaderLinkName>
         ))} */}
-        <HeaderLinkName to='/projects'>Projects</HeaderLinkName>
-        <HeaderLinkName to='/pet-projects'>Pet-projects</HeaderLinkName>
-        <HeaderLinkName to='/contacts'>About Me</HeaderLinkName>
+        <NavLink to='/projects' className="nav__link" activeClassName="nav__link_active">Projects</NavLink>
+        <NavLink to='/pet-projects' className="nav__link" activeClassName="nav__link_active">Pet-projects</NavLink>
+        <NavLink to='/contacts' className="nav__link" activeClassName="nav__link_active">About Me</NavLink>
       </HeaderLinks>
 
       <HeaderSocials>
@@ -45,6 +46,7 @@ function Header() {
 export default Header;
 
 const HeaderBlock = styled.section`
+  padding: 10px 0 0 0;
   max-width: 1440px;
   display: flex;
   align-items: center;
@@ -52,8 +54,8 @@ const HeaderBlock = styled.section`
 `;
 
 const HeaderLogo = styled.img `
-  max-height: 50px;
-  max-width: 50px;
+  max-height: 90px;
+  max-width: 90px;
   cursor: pointer;
 `;
 
@@ -66,12 +68,17 @@ const HeaderLinks = styled.nav `
     padding: 0;
 `;
 
-const HeaderLinkName = styled(Link) `
-    font-size: 22px;
-    cursor: pointer;
-    text-decoration: none;
-    color: #f9f9f9;
-`;
+// const HeaderLinkName = styled(NavLink)`
+//     font-size: 22px;
+//     cursor: pointer;
+//     text-decoration: none;
+//     color: #f9f9f9;
+
+//     :hover {
+//       color: #b6c0c2;
+//       transition: linear 0.2s;
+//     }
+// `;
 
 const HeaderSocials = styled.ul `
     max-width: 80px;
