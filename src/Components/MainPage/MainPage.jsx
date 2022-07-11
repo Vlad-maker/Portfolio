@@ -36,6 +36,10 @@ const MainPage = ({mockSlots}) => {
   return (
     <MainBlock>
 
+  <AboutMeBlock>
+
+
+
         <PhotoBlock src={photo}/>
 
         <InfoBlock>
@@ -106,6 +110,7 @@ const MainPage = ({mockSlots}) => {
             </div>
         </div>
 
+        </AboutMeBlock>
 
         <button className="contactWithMe__btn" type="button" onClick={() => setPopupActive(true)}>Contact me</button>
 
@@ -121,42 +126,22 @@ const MainPage = ({mockSlots}) => {
                   <p className="aboutMe__paragraph">Email: skateislife@mail.ru</p>
                 </li>
                 <li className="aboutMe__column">
-                <a
-                  className="aboutMe__link"
-                  href="https://github.com/Vlad-maker"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a className="aboutMe__link" href="https://github.com/Vlad-maker" target="_blank" rel="noreferrer">
                   Github
                 </a>
                 </li>
                 <li className="aboutMe__column">
-                <a
-                  className="aboutMe__link"
-                  href="https://www.facebook.com/profile.php?id=100000976609772"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a className="aboutMe__link" href="https://www.facebook.com/profile.php?id=100000976609772" target="_blank" rel="noreferrer">
                   Facebook
                 </a>
               </li>
               <li className="aboutMe__column">
-                <a
-                  className="aboutMe__link"
-                  href="https://spb.hh.ru/resume/bd17cd1bff08c5fac20039ed1f6d3471513377"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a className="aboutMe__link" href="https://spb.hh.ru/resume/bd17cd1bff08c5fac20039ed1f6d3471513377" target="_blank" rel="noreferrer" >
                   HH.ru
                 </a>
               </li>
               <li className="aboutMe__column">
-                <a
-                  className="aboutMe__link"
-                  href="https://ucarecdn.com/f927cbe6-f21d-4e1f-a635-22db5f77564d/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a className="aboutMe__link" href="https://ucarecdn.com/f927cbe6-f21d-4e1f-a635-22db5f77564d/" target="_blank" rel="noreferrer" >
                   Budu.jobs.ru
                 </a>
               </li>
@@ -173,8 +158,13 @@ const MainBlock = styled.section`
   max-width: 1440px;
   margin-top: 120px;
   display: flex;
-  // flex-direction: column;
-  // align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
+const AboutMeBlock = styled.div`
+  max-width: 1440px;
+  display: flex;
   justify-content: space-between;
 `;
 
