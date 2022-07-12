@@ -27,7 +27,7 @@ function Header() {
         ))} */}
         <NavLink to='/projects' className="nav__link" activeClassName="nav__link_active">Projects</NavLink>
         <NavLink to='/pet-projects' className="nav__link" activeClassName="nav__link_active">Pet-projects</NavLink>
-        <NavLink to='/contacts' className="nav__link" activeClassName="nav__link_active">About Me</NavLink>
+        <NavLink to='/contacts' className="nav__link" activeClassName="nav__link_active">Certificates</NavLink>
       </HeaderLinks>
 
       <HeaderSocials>

@@ -9,6 +9,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #fff;
   background-color: black;
+
+}
+
+::-webkit-scrollbar {
+  width: 0;
 }
 
 code {

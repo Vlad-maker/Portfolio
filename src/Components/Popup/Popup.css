@@ -19,9 +19,9 @@
 }
 
 .popup_content {
-    padding: 20px;
+    padding: 10px 20px;
     border-radius: 20px;
-    background-color: white;
+    background-color: rgb(29, 32, 30);
     transform: scale(0.5);
     transition: 0.4s all;
     width: 320px;

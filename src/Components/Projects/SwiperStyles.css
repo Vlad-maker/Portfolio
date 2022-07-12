@@ -1,0 +1,22 @@
+.project__swiper {
+  background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 18px;
+}
+
+.project__swiper_slide {
+  max-width: 880px;
+  /* max-height: 410px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullets {
+  top: 410px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color:black;
+}
