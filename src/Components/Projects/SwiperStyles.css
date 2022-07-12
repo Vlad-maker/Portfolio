@@ -7,16 +7,23 @@
 
 .project__swiper_slide {
   max-width: 880px;
-  /* max-height: 410px; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .swiper-pagination-bullets {
-  top: 410px;
+  top: 405px;
 }
 
 .swiper-pagination-bullet-active {
-  background-color:black;
+  background-color:#63dba9;
+}
+
+.swiper-button-prev::after {
+  color:#63dba9;
+}
+
+.swiper-button-next::after {
+  color:#63dba9;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import react from '../../Images/react.svg';
+import home from '../../Images/home.svg';
 import tg from '../../Images/tg.svg';
 import git from '../../Images/git.svg';
 import { useHistory, NavLink} from 'react-router-dom';
@@ -19,7 +19,7 @@ function Header() {
   return (
     <HeaderBlock>
 
-      <HeaderLogo src={react} onClick={goMainPage}/>
+      <HeaderLogo src={home} onClick={goMainPage}/>
 
       <HeaderLinks>
         {/* {links.map((link) => (
@@ -54,8 +54,8 @@ const HeaderBlock = styled.section`
 `;
 
 const HeaderLogo = styled.img `
-  max-height: 90px;
-  max-width: 90px;
+  max-height: 40px;
+  max-width: 40px;
   cursor: pointer;
 `;
 

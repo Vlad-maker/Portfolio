@@ -10,6 +10,17 @@ import Famiry1 from '../../Images/Projects/Famiry/Famiry1.png';
 import Famiry2 from '../../Images/Projects/Famiry/Famiry2.png';
 import Famiry3 from '../../Images/Projects/Famiry/Famiry3.png';
 
+import CF1 from '../../Images/Projects/CF/CF1.png';
+import CF2 from '../../Images/Projects/CF/CF2.png';
+import CF3 from '../../Images/Projects/CF/CF3.png';
+import CF4 from '../../Images/Projects/CF/CF4.jpg';
+import CF5 from '../../Images/Projects/CF/CF5.jpg';
+import CF6 from '../../Images/Projects/CF/CF6.png';
+import CF7 from '../../Images/Projects/CF/CF7.jpg';
+import CF8 from '../../Images/Projects/CF/CF8.jpg';
+import CF9 from '../../Images/Projects/CF/CF9.jpg';
+import CF10 from '../../Images/Projects/CF/CF10.jpg';
+
 SwiperCore.use([Navigation, Autoplay, Scrollbar, Pagination]);
 
 function Projects() {
@@ -18,11 +29,11 @@ function Projects() {
 
       <ProjectBlock>
         <ProjectPartInfo>
-          <ProjectInfoName>
+          <ProjectInfoName style={{marginBottom: '10px'}}>
             Famiry
           </ProjectInfoName>
           <ProjectInfoCaption>
-            Free online service for building a family tree
+            Free online service for building a family tree.
           </ProjectInfoCaption>
           <ProjectInfoLink href='https://famiry.ru/'>
             Famiry site
@@ -32,7 +43,7 @@ function Projects() {
           </ProjectInfoLink>
           <ProjectInfoDescription>
             I started my way in commercial development with a Famiry project.
-            The goal of the project was to create a service for building a family tree.
+            The goal of the project was to create a service for building a family tree.<br/>
             I was developing an interface for creating and editing a person's card.
             I met and learned how to configure such libraries as
               <a href='https://react-hook-form.com/' style={{textDecoration: 'none', color:'#2f76cc' }}> React Hook Form </a>
@@ -40,7 +51,6 @@ function Projects() {
             , honed the skill of working with Rest API and, and in general with ReactJS.
             I also got acquainted with Jira and tried myself in team development, by the way, for code version control, we used Bitbucket.
             The result of our work can be evaluated on the company's website at the link above.
-
           </ProjectInfoDescription>
         </ProjectPartInfo>
 
@@ -58,8 +68,8 @@ function Projects() {
               "disableOnInteraction": false,
             }}
             //on/off slider buttons
-            navigation={false}
-            pagination={true}
+            navigation={true}
+            pagination={false}
           >
             <SwiperSlide className='project__swiper_slide'>
               <SwiperImage src={Famiry1} alt='screenshot'/>
@@ -75,7 +85,7 @@ function Projects() {
 
       </ProjectBlock>
 
-      <ProjectBlock>
+      <ProjectBlock style={{marginBottom: '160px'}}>
 
       <ProjectPartSlides>
           <Swiper
@@ -90,46 +100,64 @@ function Projects() {
               "delay": 4000,
               "disableOnInteraction": false,
             }}
-            //on/off slider buttons
-            navigation={false}
-            pagination={true}
+            // on/off slider buttons
+            navigation={true}
+            pagination={false}
           >
             <SwiperSlide className='project__swiper_slide'>
-              <SwiperImage src={Famiry1} alt='screenshot'/>
+              <SwiperImage src={CF1} alt='screenshot'/>
             </SwiperSlide>
             <SwiperSlide className='project__swiper_slide'>
-              <SwiperImage src={Famiry2} alt='screenshot'/>
+              <SwiperImage src={CF2} alt='screenshot'/>
             </SwiperSlide>
             <SwiperSlide className='project__swiper_slide'>
-              <SwiperImage src={Famiry3} alt='screenshot'/>
+              <SwiperImage src={CF3} alt='screenshot'/>
+            </SwiperSlide>
+            <SwiperSlide className='project__swiper_slide'>
+              <SwiperImage src={CF4} alt='screenshot'/>
+            </SwiperSlide>
+            <SwiperSlide className='project__swiper_slide'>
+              <SwiperImage src={CF5} alt='screenshot'/>
+            </SwiperSlide>
+            <SwiperSlide className='project__swiper_slide'>
+              <SwiperImage src={CF6} alt='screenshot'/>
+            </SwiperSlide>
+            <SwiperSlide className='project__swiper_slide'>
+              <SwiperImage src={CF7} alt='screenshot'/>
+            </SwiperSlide>
+            <SwiperSlide className='project__swiper_slide'>
+              <SwiperImage src={CF8} alt='screenshot'/>
+            </SwiperSlide>
+            <SwiperSlide className='project__swiper_slide'>
+              <SwiperImage src={CF9} alt='screenshot'/>
+            </SwiperSlide>
+            <SwiperSlide className='project__swiper_slide'>
+              <SwiperImage src={CF10} alt='screenshot'/>
             </SwiperSlide>
           </Swiper>
         </ProjectPartSlides>
 
         <ProjectPartInfo>
           <ProjectInfoName>
-            Famiry
+            CastingForm
           </ProjectInfoName>
           <ProjectInfoCaption>
-            Free online service for building a family tree
+            CF is the #1 platform to book actors globally.
           </ProjectInfoCaption>
-          <ProjectInfoLink href='https://famiry.ru/'>
-            Famiry site
-          </ProjectInfoLink>
-          <ProjectInfoLink href='https://famiry.ru/tree'>
-            Project
+          <ProjectInfoLink href='https://www.castingform.com/'>
+            Landing
           </ProjectInfoLink>
           <ProjectInfoDescription>
-            I started my way in commercial development with a Famiry project.
-            The goal of the project was to create a service for building a family tree.
-            I was developing an interface for creating and editing a person's card.
-            I met and learned how to configure such libraries as
-              <a href='https://react-hook-form.com/' style={{textDecoration: 'none', color:'#2f76cc' }}> React Hook Form </a>
-            and <a href='https://react-hook-form.com/' style={{textDecoration: 'none', color:'#2c76d1' }}> React-beautiful-dnd </a>
-            , honed the skill of working with Rest API and, and in general with ReactJS.
-            I also got acquainted with Jira and tried myself in team development, by the way, for code version control, we used Bitbucket.
-            The result of our work can be evaluated on the company's website at the link above.
-
+            I continued my way in the CastingForm project. At first I was developing a landing page.
+            The result can be seen from the link above.<br/>
+            Further, I developed an admin panel for managing the data of actors that we received from the database,
+            and also set up a flow for registering and authorizing new users.<br/>
+            At the moment, the service is still under development and under a non-disclosure agreement,
+            so you can evaluate the work by screenshots. During my work in CF I mastered such libraries as
+            <a href='https://swiperjs.com/' style={{textDecoration: 'none', color:'#2f76cc' }}> SwiperJS </a>,
+            <a href='https://styled-components.com/' style={{textDecoration: 'none', color:'#2f76cc' }}> Styled-components </a>,
+            state-manager
+            <a href='https://redux.js.org/' style={{textDecoration: 'none', color:'#2f76cc' }}> Redux </a>, and many others.
           </ProjectInfoDescription>
         </ProjectPartInfo>
 
@@ -165,8 +193,8 @@ const ProjectPartInfo = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
-  // height: 450px;
+  justify-content: space-between;
+  height: 440px;
 `
 const ProjectPartSlides = styled.div`
   max-width: 880px;
@@ -175,7 +203,7 @@ const ProjectPartSlides = styled.div`
 const ProjectInfoName = styled.h3`
   max-width: 500px;
   width: 100%;
-  margin: 0 0 10px 0;
+  margin: 0;
   font-size: 34px;
 `
 const ProjectInfoLink = styled.a`
@@ -184,6 +212,7 @@ const ProjectInfoLink = styled.a`
   font-size: 17px;
   text-decoration: none;
   color: #63dba9;
+
   cursor: pointer;
   :hover {
     color: #27a182;
@@ -193,7 +222,7 @@ const ProjectInfoDescription = styled.p`
   max-width: 500px;
   width: 100%;
   font-size: 20px;
-  margin: 30px 0 0 0;
+  margin: 20px 0 0 0;
 `
 const ProjectInfoCaption = styled.p`
   max-width: 500px;
@@ -205,8 +234,8 @@ const ProjectInfoCaption = styled.p`
 
 const SwiperImage = styled.img`
   object-fit: contain;
-  max-width: 820px;
-  max-height: 420px;
+  max-width: 780px;
+  max-height: 410px;
   border-radius: 10px;
 `
 
