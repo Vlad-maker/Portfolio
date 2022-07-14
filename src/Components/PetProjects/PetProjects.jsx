@@ -3,18 +3,13 @@ import styled from 'styled-components';
 
 function PetProjects() {
 
-  // const data = [
-  //   {name: 'test', link: 'link', linkName: 'linkName', description: 'description'},
-  //   {name: 'test2', link: 'link2', linkName: 'linkName2', description: 'description2'}
-  // ];
-
   return (
     <PetProjectMainBlock>
 
-
+      <HeaderBlock>Pet-Projects</HeaderBlock>
 
       <BlockHeading>
-        HTML/CSS Projects
+        HTML/CSS
       </BlockHeading>
 
       <PetProjectFlexBlock>
@@ -72,7 +67,7 @@ function PetProjects() {
       </PetProjectFlexBlock>
 
       <BlockHeading>
-        JavaScript Projects
+        JavaScript
       </BlockHeading>
 
       <PetProjectFlexBlock>
@@ -128,8 +123,16 @@ function PetProjects() {
       </PetProjectFlexBlock>
 
       <BlockHeading>
-        React/Redux + NodeJS Projects
+        React/Redux + NodeJS
       </BlockHeading>
+
+      <Warning>
+        In this section some of the projects are posted on Github Pages,
+        and some have their own backend and require renting a cloud server,
+        unfortunately, now I'm not able to pay for a cloud server for pet projects,
+        so, in these cases it will only be possible to get acquainted with the project code,
+        thank you for your understanding.
+      </Warning>
 
       <PetProjectFlexBlock>
 
@@ -191,14 +194,7 @@ function PetProjects() {
 
       </PetProjectFlexBlock>
 
-      <Warning>
-        In this section you can see my educational projects.
-        Some of the projects are posted on Github Pages,
-        and some have their own backend and require renting a cloud server,
-        unfortunately, now I'm not able to pay for a cloud server for pet projects,
-        so, in these cases it will only be possible to get acquainted with the project code,
-        thank you for your understanding.
-      </Warning>
+
 
     </PetProjectMainBlock>
   )
@@ -209,9 +205,21 @@ export default PetProjects;
 const PetProjectMainBlock = styled.section`
   max-width: 1440px;
   width:100%;
-  margin: 80px 0 0 0;
-  padding-bottom: 90px;
 `
+
+const HeaderBlock = styled.h2`
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 38px;
+  margin: 0 0 80px 0;
+  background-image: linear-gradient(90deg, #3e99b3, #E3535D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`
+
 const Warning = styled.p`
   opacity: 0.8;
 
@@ -220,6 +228,7 @@ const Warning = styled.p`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
+  margin: 0 0 20px 0;
 `
 const BlockHeading = styled.h3`
   margin: 20px 0;
@@ -228,9 +237,6 @@ const BlockHeading = styled.h3`
   display: flex;
   justify-content: center;
   align-items: center;
-  :first-of-type {
-    margin: 40px 0 20px 0;
-  }
 `
 
 const PetProjectFlexBlock = styled.div `
@@ -260,7 +266,6 @@ const PetProjectBlock = styled.div`
 
 const PetProjectHeading = styled.div`
   font-size: 23px;
-  // color: #fff;
   margin: 0 0 10px 0;
   background-image: linear-gradient(90deg, #FFF, #0F0FFF);
   -webkit-background-clip: text;

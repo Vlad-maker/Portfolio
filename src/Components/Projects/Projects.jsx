@@ -27,6 +27,8 @@ function Projects() {
   return (
     <ProjectPage>
 
+      <HeaderBlock> Commercial projects </HeaderBlock>
+
       <ProjectBlock>
         <ProjectPartInfo>
           <ProjectInfoName style={{marginBottom: '10px'}}>
@@ -87,7 +89,7 @@ function Projects() {
 
       <ProjectBlock>
 
-      <ProjectPartSlides>
+        <ProjectPartSlides>
           <Swiper
             className='project__swiper'
             spaceBetween={10}
@@ -161,11 +163,7 @@ function Projects() {
           </ProjectInfoDescription>
         </ProjectPartInfo>
 
-
-
       </ProjectBlock>
-
-
 
     </ProjectPage>
   )
@@ -180,14 +178,27 @@ const ProjectPage = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 60px;
 `
+
+const HeaderBlock = styled.h2`
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 38px;
+  margin: 0 0 80px 0;
+  background-image: linear-gradient(90deg, #E3535D, #2AA5A0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`
+
 const ProjectBlock = styled.div`
   max-width: 1440px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 0 0 100px 0;
+  margin: 0 0 80px 0;
 `
 const ProjectPartInfo = styled.div`
   max-width: 500px;

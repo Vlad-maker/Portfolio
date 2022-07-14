@@ -23,12 +23,12 @@ import sql from '../../Images/Certificates/sql.jpg'
 import codeigniter from '../../Images/Certificates/codeigniter.jpg'
 import linux from '../../Images/Certificates/linux.jpg'
 
-
 SwiperCore.use([Navigation, Autoplay, Scrollbar, Pagination]);
 
 function Certificates() {
   return (
     <CerificatesBlock>
+      <HeaderBlock>Certificates</HeaderBlock>
       <Swiper
             style={{maxWidth: '1000px'}}
             spaceBetween={10}
@@ -100,13 +100,27 @@ export default Certificates;
 const CerificatesBlock = styled.section`
   max-width: 1440px;
   width:100%;
-  margin: 80px 0 0 0;
+  margin: 60px 0 0 0;
   padding-bottom: 90px;
-
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `
+
+const HeaderBlock = styled.h2`
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 38px;
+  margin: 0 0 80px 0;
+  background-image: linear-gradient(90deg, #211338, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`
+
 const SwiperCerificateImage=styled.img`
   max-width: 900px;
   max-height: 600px;

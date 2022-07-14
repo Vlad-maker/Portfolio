@@ -1,34 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
-import home from '../../Images/home.svg';
+import 'animate.css';
+
+import home from '../../Images/binary-code.png';
 import tg from '../../Images/tg.svg';
 import git from '../../Images/git.svg';
-// import { useHistory, NavLink} from 'react-router-dom';
-import './Header.css';
+
 
 function Header() {
-
-  // const history = useHistory();
-
-  // const goMainPage = () => {
-  //   history.push(`/`);
-  // };
-
-  // const links = ["Коммерческие проекты", "Pet-проекты", "Контакты"];
 
   return (
     <HeaderBlock>
 
       <HeaderLogo src={home}/>
 
-      {/* <HeaderLinks> */}
-        {/* {links.map((link) => (
-            <HeaderLinkName>{link}</HeaderLinkName>
-        ))} */}
-        {/* <NavLink to='/projects' className="nav__link" activeClassName="nav__link_active">Projects</NavLink>
-        <NavLink to='/pet-projects' className="nav__link" activeClassName="nav__link_active">Pet-projects</NavLink>
-        <NavLink to='/certificates' className="nav__link" activeClassName="nav__link_active">Certificates</NavLink>
-      </HeaderLinks> */}
+      <HeaderCaption className="animate__animated animate__jello">My Portfolio</HeaderCaption>
 
       <HeaderSocials>
         <HeaderSocialLink href="https://github.com/Vlad-maker">
@@ -51,38 +37,22 @@ const HeaderBlock = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 80px;
 `;
 
 const HeaderLogo = styled.img `
-  max-height: 40px;
-  max-width: 40px;
-  cursor: pointer;
+  max-height: 45px;
+  max-width: 45px;
 `;
 
-// const HeaderLinks = styled.nav `
-//     max-width: 550px;
-//     width: 100%;
-//     display: flex;
-//     list-style-type: none;
-//     justify-content: space-between;
-//     padding: 0;
-// `;
-
-// const HeaderLinkName = styled(NavLink)`
-//     font-size: 22px;
-//     cursor: pointer;
-//     text-decoration: none;
-//     color: #f9f9f9;
-
-//     :hover {
-//       color: #b6c0c2;
-//       transition: linear 0.2s;
-//     }
-// `;
+const HeaderCaption = styled.h1`
+  font-size: 40px;
+  margin: 0 0 0 55px;
+  color: #d0d3db;
+`
 
 const HeaderSocials = styled.ul `
-    max-width: 80px;
-    height: 30px;
+    max-width: 120px;
     width: 100%;
     display: flex;
     list-style-type: none;
@@ -93,10 +63,11 @@ const HeaderSocials = styled.ul `
 const HeaderSocialLink = styled.a `
     text-decoration: none;
     margin: 0;
+
 `;
 
 const HeaderSocialLogo = styled.img `
-  max-height: 30px;
-  max-width: 30px;
+  max-width: 45px;
+  max-height: 45px
   cursor: pointer;
 `;

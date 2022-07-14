@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Route, Switch} from 'react-router-dom';
 import './App.css';
 import styled from 'styled-components';
 import Header from './Components/Header/Header';
@@ -10,14 +9,6 @@ import PetProjects from './Components/PetProjects/PetProjects';
 import Certificates from './Components/Certificates/Certificates';
 
 import { mockSlots } from './utils/mocks/mocks';
-
-// const PageWrapper = (props) => {
-//   return <>
-//     <Header />
-//       {props.children}
-//     <Footer />
-//   </>
-// };
 
 const App = () => {
 
@@ -31,30 +22,6 @@ const App = () => {
       <PetProjects/>
       <Certificates/>
       <Footer />
-      {/* <Switch>
-        <Route exact path="/">
-          <PageWrapper>
-            <MainPage
-              mockSlots={mockSlots}
-            />
-          </PageWrapper>
-        </Route>
-        <Route path="/projects">
-          <PageWrapper>
-            <Projects/>
-          </PageWrapper>
-        </Route>
-        <Route path="/pet-projects">
-          <PageWrapper>
-            <PetProjects/>
-          </PageWrapper>
-        </Route>
-        <Route path="/certificates">
-          <PageWrapper>
-            <Certificates/>
-          </PageWrapper>
-        </Route>
-      </Switch> */}
     </AppContainer>
   );
 }
