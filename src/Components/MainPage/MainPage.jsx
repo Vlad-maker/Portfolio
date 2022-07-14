@@ -145,13 +145,18 @@ export default MainPage
 const MainBlock = styled.section`
   max-width: 1440px;
   margin-top: 120px;
+
+  padding-bottom: 90px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 `;
 
 const AboutMeBlock = styled.div`
   max-width: 1440px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 `;
@@ -211,7 +216,7 @@ const InfoBlock = styled.div`
 `
 const ContactButton = styled.button`
   border: none;
-  margin: 160px auto 0;
+  margin: 140px auto 0;
   width: 170px;
   height: 50px;
   border-radius: 10px;

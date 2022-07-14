@@ -13,16 +13,17 @@ export default Footer;
 
 const FooterBlock = styled.section`
   max-width: 1440px;
-  width: 100%;
   height: 60px;
-  // margin: auto 0 0 0;
-  position: fixed;
-  bottom: 0;
+
+  position: absolute;
+	bottom: 0;
+	width: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
-  box-sizing: border-box;
+  // box-sizing: border-box;
+
   background-image: linear-gradient(90deg, #E3535D, #2AA5A0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

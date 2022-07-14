@@ -14,7 +14,7 @@ import { mockSlots } from './utils/mocks/mocks';
 const PageWrapper = (props) => {
   return <>
     <Header />
-    {props.children}
+      {props.children}
     <Footer />
   </>
 };
@@ -55,6 +55,9 @@ export default App;
 
 const AppContainer = styled.div`
   max-width: 1440px;
-  height: 100%;
+  min-height: 100vh;
   margin: 0 auto;
+
+  position: relative;
+	// min-height: 100%;
 `;
