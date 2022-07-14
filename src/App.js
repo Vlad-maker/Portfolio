@@ -7,7 +7,7 @@ import Footer from './Components/Footer/Footer';
 import MainPage from './Components/MainPage/MainPage';
 import Projects from './Components/Projects/Projects';
 import PetProjects from './Components/PetProjects/PetProjects';
-import Contacts from './Components/Contacts/Contacts';
+import Certificates from './Components/Certificates/Certificates';
 
 import { mockSlots } from './utils/mocks/mocks';
 
@@ -41,9 +41,9 @@ const App = () => {
             <PetProjects/>
           </PageWrapper>
         </Route>
-        <Route path="/contacts">
+        <Route path="/certificates">
           <PageWrapper>
-            <Contacts/>
+            <Certificates/>
           </PageWrapper>
         </Route>
       </Switch>

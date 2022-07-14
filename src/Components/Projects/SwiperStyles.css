@@ -13,7 +13,11 @@
 }
 
 .swiper-pagination-bullets {
-  top: 405px;
+  top: 610px;
+}
+
+.swiper-pagination-bullet {
+  background-color:#fff;
 }
 
 .swiper-pagination-bullet-active {

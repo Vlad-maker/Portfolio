@@ -266,6 +266,7 @@ const PetProjectHeading = styled.div`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
+  cursor: default;
 `
 
 const PetProjectLink = styled.a`
@@ -281,4 +282,5 @@ const PetProjectDescription = styled.p`
   font-size: 19px;
   color: #fff;
   margin: 10px 0 0 0;
+  cursor: default;
 `

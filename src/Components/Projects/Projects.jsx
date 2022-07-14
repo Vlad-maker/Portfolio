@@ -58,7 +58,7 @@ function Projects() {
           <Swiper
             className='project__swiper'
             spaceBetween={10}
-            slidesPerView={'auto'}
+            slidesPerView={'1'}
             direction={'horizontal'}
             speed={3000}
             freeMode={false}
@@ -91,7 +91,7 @@ function Projects() {
           <Swiper
             className='project__swiper'
             spaceBetween={10}
-            slidesPerView={'auto'}
+            slidesPerView={'1'}
             direction={'horizontal'}
             speed={3000}
             freeMode={false}
