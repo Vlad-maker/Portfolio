@@ -32,7 +32,6 @@
     "type": "git",
     "url": "git+github.com/Vlad-maker/Portfolio.git"
   },
-  "homepage": "https://vlad-maker.github.io/Portfolio/",
   "eslintConfig": {
     "extends": [
       "react-app",
