@@ -140,14 +140,12 @@ const MainPage = ({mockSlots}) => {
   )
 }
 
-export default MainPage
+export default MainPage;
 
 const MainBlock = styled.section`
   max-width: 1440px;
   margin-top: 120px;
-
   padding-bottom: 90px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -179,8 +177,9 @@ const SlotsBlock = styled.div `
 `
 const SlotsList = styled.ul`
   min-height: 45px;
-  padding: 0 auto;
+  padding: 0 0 0 10px;
   display: flex;
+  justify-content: center;
   max-width: 720px;
 `
 const SlotsItem = styled.div `
@@ -212,11 +211,11 @@ const PhotoBlock = styled.img`
 `
 
 const InfoBlock = styled.div`
-
 `
+
 const ContactButton = styled.button`
   border: none;
-  margin: 140px auto 0;
+  margin: 100px auto 0;
   width: 170px;
   height: 50px;
   border-radius: 10px;
@@ -257,6 +256,7 @@ const ContactsList = styled.ul`
 const ContactsItem = styled.li`
   margin: 3px;
 `
+
 const ContactsParagraph = styled.p`
   font-size: 20px;
   margin: 0;

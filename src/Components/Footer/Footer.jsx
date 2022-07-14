@@ -22,7 +22,6 @@ const FooterBlock = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  // box-sizing: border-box;
 
   background-image: linear-gradient(90deg, #E3535D, #2AA5A0);
   -webkit-background-clip: text;

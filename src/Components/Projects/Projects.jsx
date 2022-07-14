@@ -85,7 +85,7 @@ function Projects() {
 
       </ProjectBlock>
 
-      <ProjectBlock style={{marginBottom: '160px'}}>
+      <ProjectBlock>
 
       <ProjectPartSlides>
           <Swiper
@@ -180,6 +180,7 @@ const ProjectPage = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 60px;
 `
 const ProjectBlock = styled.div`
   max-width: 1440px;

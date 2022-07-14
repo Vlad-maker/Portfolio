@@ -57,7 +57,5 @@ const AppContainer = styled.div`
   max-width: 1440px;
   min-height: 100vh;
   margin: 0 auto;
-
   position: relative;
-	// min-height: 100%;
 `;
