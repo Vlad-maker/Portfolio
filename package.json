@@ -25,8 +25,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build & gh-pages -d build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+github.com/Vlad-maker/Portfolio.git"
+  },
+  "homepage": "https://vlad-maker.github.io/Portfolio/",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -44,5 +50,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
