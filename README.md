@@ -7,8 +7,8 @@
 
 #### Технологии:
 
-<img align="left" width="35px" src="./src/images/html5.svg" />
-<img align="left" width="35px" src="./src/images/css3.svg" />
-<img align="left" width="35px" src="./src/images/javascript.svg" />
-<img align="left" width="35px" src="./src/images/reactRM.svg" />
+<img align="left" width="35px" src="./src/Images/html5.svg" />
+<img align="left" width="35px" src="./src/Images/css3.svg" />
+<img align="left" width="35px" src="./src/Images/javascript.svg" />
+<img align="left" width="35px" src="./src/Images/reactRM.svg" />
 
