@@ -126,13 +126,7 @@ function PetProjects() {
         React/Redux + NodeJS
       </BlockHeading>
 
-      <Warning>
-        In this section some of the projects are posted on Github Pages,
-        and some have their own backend and require renting a cloud server,
-        unfortunately, now I'm not able to pay for a cloud server for pet projects,
-        so, in these cases it will only be possible to get acquainted with the project code,
-        thank you for your understanding.
-      </Warning>
+
 
       <PetProjectFlexBlock>
 
@@ -160,6 +154,29 @@ function PetProjects() {
           </PetProjectDescription>
         </PetProjectBlock>
 
+        <PetProjectBlock style={{margin: '0 auto 20px'}}>
+          <PetProjectHeading>
+            Notes App
+          </PetProjectHeading>
+          <PetProjectLink href='https://vlad-maker.github.io/notes-app/'>
+            NotesApp
+          </PetProjectLink>
+          <PetProjectDescription>
+            Application for writing notes with the ability to delete and save data in the localStorage.
+            MaterialUI is used for styling.
+          </PetProjectDescription>
+        </PetProjectBlock>
+
+      </PetProjectFlexBlock>
+
+      <Warning>
+        In the section below some projects have their own backend and require renting a cloud server,
+        unfortunately, now I'm not able to pay for a cloud server for pet projects,
+        so, in these cases it will only be possible to get acquainted with the project code,
+        thank you for your understanding.
+      </Warning>
+
+      <PetProjectFlexBlock>
         <PetProjectBlock>
           <PetProjectHeading>
             Movies Explorer
@@ -191,7 +208,6 @@ function PetProjects() {
             Mesto is a photo gallery where you can post your photos, view and rate photos of other users.
           </PetProjectDescription>
         </PetProjectBlock>
-
       </PetProjectFlexBlock>
 
 
