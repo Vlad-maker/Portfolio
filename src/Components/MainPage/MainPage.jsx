@@ -150,6 +150,11 @@ const MainBlock = styled.section`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 425px) {
+    max-width: 425px;
+    margin-top: 40px;
+  }
 `;
 
 const AboutMeBlock = styled.div`
@@ -157,23 +162,60 @@ const AboutMeBlock = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
+
+  @media (max-width: 425px) {
+    max-width: 1440px;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
+
+const InfoBlock = styled.div`
+
+@media (max-width: 425px) {
+  max-width: 425px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0 0 0;
+}
+`
 
 const HeadingBlock = styled.h2 `
   margin: 0 0 30px 0;
   color: #fff;
   max-width: 720px;
   font-size: 30px;
+
+  @media (max-width: 425px) {
+    max-width: 425px;
+    font-size: 22px;
+  }
 `
 
 const TextBlock = styled.p `
   margin: 0 0 30px 0;
   max-width: 720px;
   font-size: 22px;
+
+  @media (max-width: 425px) {
+    margin: 0 0 40px 0;
+    max-width: 420px;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
 `
+
+
 const SlotsBlock = styled.div `
   margin: 0;
   max-width 720px;
+
+  @media (max-width: 425px) {
+    max-width 425px;
+  }
 `
 const SlotsList = styled.ul`
   min-height: 45px;
@@ -181,6 +223,12 @@ const SlotsList = styled.ul`
   display: flex;
   justify-content: center;
   max-width: 720px;
+
+  @media (max-width: 425px) {
+    max-width 423px;
+    padding: 0 0 0 4px;
+    margin: 0 0 40px 0;
+  }
 `
 const SlotsItem = styled.div `
   margin: 0 11px 0 0;
@@ -194,23 +242,36 @@ const SlotsItem = styled.div `
   list-style-type: none;
   display: flex;
   align-items: center;
+
+  @media (max-width: 425px) {
+    min-width: 25px;
+  }
 `
 
 const SlotItemLogo = styled.img`
   width: 50px;
   height: 50px;
   background-size: contain;
+
+  @media (max-width: 425px) {
+    width: 35px;
+    height: 35px;
+  }
 `
+
+
 const PhotoBlock = styled.img`
   width: 290px;
   height: 290px;
   margin: 0;
   border-radius: 30px;
   object-fit: cover;
-  opacity: 0.8
-`
+  opacity: 0.8;
 
-const InfoBlock = styled.div`
+  @media (max-width: 425px) {
+    width: 375px;
+    height: 375px;
+  }
 `
 
 const ContactButton = styled.button`

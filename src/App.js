@@ -15,7 +15,7 @@ const App = () => {
   return (
     <AppContainer>
       <Header />
-      <MainPage
+       <MainPage
         mockSlots={mockSlots}
       />
       <Projects/>
