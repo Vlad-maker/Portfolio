@@ -109,6 +109,7 @@ const CerificatesBlock = styled.section`
   align-items: center;
 
   @media (max-width: 425px) {
+    margin: 40px 0 0 0;
     max-width: 425px;
   }
 `
@@ -122,10 +123,10 @@ const HeaderBlock = styled.p`
   font-size: 38px;
   font-weight: bolder;
   margin: 0 0 80px 0;
-  background-image: linear-gradient(90deg, #211338, #fff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 1;
+  color: #63dba9;
+  // background-image: linear-gradient(90deg, #211338, #fff);
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
 
   @media (max-width: 425px) {
     font-size: 28px;
