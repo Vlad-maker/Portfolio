@@ -30,7 +30,8 @@ function Certificates() {
     <CerificatesBlock>
       <HeaderBlock>Certificates</HeaderBlock>
       <Swiper
-            style={{maxWidth: '1000px'}}
+            // style={{maxWidth: '1000px'}}
+            className='mySwiperStyle'
             spaceBetween={10}
             slidesPerView={'1'}
             direction={'horizontal'}
@@ -106,6 +107,10 @@ const CerificatesBlock = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 425px) {
+    max-width: 425px;
+  }
 `
 
 const HeaderBlock = styled.h2`
@@ -119,6 +124,11 @@ const HeaderBlock = styled.h2`
   background-image: linear-gradient(90deg, #211338, #fff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media (max-width: 425px) {
+    font-size: 28px;
+    margin: 0 0 40px 0;
+  }
 `
 
 const SwiperCerificateImage=styled.img`
@@ -126,4 +136,9 @@ const SwiperCerificateImage=styled.img`
   max-height: 600px;
   object-fit: contain;
   margin: 0 0 40px 0;
+
+  @media (max-width: 425px) {
+    max-width: 420px;
+    max-height: 275px;
+  }
 `

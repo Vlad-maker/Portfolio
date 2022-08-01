@@ -221,6 +221,10 @@ export default PetProjects;
 const PetProjectMainBlock = styled.section`
   max-width: 1440px;
   width:100%;
+
+  @media (max-width: 425px) {
+    max-width: 425px;
+  }
 `
 
 const HeaderBlock = styled.h2`
@@ -234,17 +238,28 @@ const HeaderBlock = styled.h2`
   background-image: linear-gradient(90deg, #3e99b3, #E3535D);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media (max-width: 425px) {
+    max-width: 425px;
+    font-size: 28px;
+    margin: 0 0 40px 0;
+  }
 `
 
 const Warning = styled.p`
   opacity: 0.8;
-
   font-size: 18px;
   background-image: linear-gradient(90deg, #E3535D, #2AA5A0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
   margin: 0 0 20px 0;
+
+  @media (max-width: 425px) {
+    font-size: 16px;
+    max-width: 400px;
+    margin: 0 auto 20px;
+  }
 `
 const BlockHeading = styled.h3`
   margin: 20px 0;
@@ -253,12 +268,20 @@ const BlockHeading = styled.h3`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 425px) {
+    font-size: 22px;
+  }
 `
 
 const PetProjectFlexBlock = styled.div `
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (max-width: 425px) {
+    justify-content: center;
+  }
 `
 
 const PetProjectBlock = styled.div`
@@ -278,6 +301,10 @@ const PetProjectBlock = styled.div`
     transform: scale(1.02);
     transition: 0.2s linear;
   }
+
+  @media (max-width: 425px) {
+    max-width: 400px;
+  }
 `
 
 const PetProjectHeading = styled.div`
@@ -288,6 +315,10 @@ const PetProjectHeading = styled.div`
   -webkit-text-fill-color: transparent;
   text-align: center;
   cursor: default;
+
+  @media (max-width: 425px) {
+    display: none;
+  }
 `
 
 const PetProjectLink = styled.a`

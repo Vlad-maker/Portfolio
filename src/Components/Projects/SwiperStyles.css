@@ -31,3 +31,40 @@
 .swiper-button-next::after {
   color:#63dba9;
 }
+
+.mySwiperStyle {
+  max-width: 1000px;
+}
+
+
+@media (max-width: 425px) {
+  .project__swiper {
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 18px;
+  }
+
+  .project__swiper_slide {
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-button-prev::after {
+   display: none;
+  }
+
+  .swiper-button-next::after {
+    display: none;
+  }
+
+  .swiper-pagination-bullets {
+    top: 285px;
+  }
+
+  .mySwiperStyle {
+    max-width: 425px;
+  }
+
+}

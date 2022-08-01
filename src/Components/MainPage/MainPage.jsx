@@ -225,7 +225,7 @@ const SlotsList = styled.ul`
   max-width: 720px;
 
   @media (max-width: 425px) {
-    max-width 423px;
+    max-width 400px;
     padding: 0 0 0 4px;
     margin: 0 0 40px 0;
   }
@@ -254,8 +254,8 @@ const SlotItemLogo = styled.img`
   background-size: contain;
 
   @media (max-width: 425px) {
-    width: 35px;
-    height: 35px;
+    width: 32px;
+    height: 32px;
   }
 `
 
@@ -287,6 +287,13 @@ const ContactButton = styled.button`
       background-color: #1ba853;
       cursor: pointer;
       transition: 0.2s linear;
+    }
+
+    @media (max-width: 425px) {
+      margin-top: 40px;
+      font-size: 18px;
+      width: 150px;
+      height: 40px;
     }
 `
 

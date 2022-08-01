@@ -42,6 +42,7 @@ const HeaderBlock = styled.section`
     @media (max-width: 425px) {
       max-width: 425px;
       height: 60px;
+      padding: 10px 15px 0 15px;
     }
 `;
 

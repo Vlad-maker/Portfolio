@@ -178,6 +178,11 @@ const ProjectPage = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 425px) {
+    max-width: 425px;
+    margin: 60px 0 0 0;
+  }
 `
 
 const HeaderBlock = styled.h2`
@@ -191,14 +196,29 @@ const HeaderBlock = styled.h2`
   background-image: linear-gradient(90deg, #E3535D, #2AA5A0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media (max-width: 425px) {
+    font-size: 28px;
+    margin: 0 0 40px 0;
+  }
 `
 
 const ProjectBlock = styled.div`
   max-width: 1440px;
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin: 0 0 80px 0;
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+    min-height: 700px;
+    margin: 0 0 60px 0;
+    :last-of-type {
+      flex-direction: column-reverse;
+    }
+  }
 `
 const ProjectPartInfo = styled.div`
   max-width: 500px;
@@ -207,16 +227,33 @@ const ProjectPartInfo = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: 440px;
+  margin: 0;
+
+  @media (max-width: 425px) {
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+  }
 `
 const ProjectPartSlides = styled.div`
   max-width: 880px;
   width: 100%;
+  margin: 0;
+
+  @media (max-width: 425px) {
+    max-width: 400px;
+    margin: 0 auto;
+  }
 `
 const ProjectInfoName = styled.h3`
   max-width: 500px;
   width: 100%;
   margin: 0;
   font-size: 34px;
+
+  @media (max-width: 425px) {
+    font-size: 24px;
+  }
 `
 const ProjectInfoLink = styled.a`
   max-width: 500px;
@@ -235,6 +272,11 @@ const ProjectInfoDescription = styled.p`
   width: 100%;
   font-size: 20px;
   margin: 20px 0 0 0;
+
+  @media (max-width: 425px) {
+    font-size: 18px;
+    text-align: start;
+  }
 `
 const ProjectInfoCaption = styled.p`
   max-width: 500px;
@@ -242,6 +284,10 @@ const ProjectInfoCaption = styled.p`
   margin: 0;
   font-size: 22px;
   margin: 0 0 30px 0;
+
+  @media (max-width: 425px) {
+    font-size: 20px;
+  }
 `
 
 const SwiperImage = styled.img`
@@ -249,5 +295,9 @@ const SwiperImage = styled.img`
   max-width: 780px;
   max-height: 410px;
   border-radius: 10px;
+
+  @media (max-width: 425px) {
+    max-height: 185px;
+  }
 `
 
