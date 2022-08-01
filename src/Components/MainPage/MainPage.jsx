@@ -91,7 +91,7 @@ const MainPage = ({mockSlots}) => {
               </SlotsBlock>
             </InfoBlock>
 
-            <div>
+            <div className='animation_block'>
                 <div className="spinner-box">
                   <div className="blue-orbit leo"/>
                   <div className="green-orbit leo"/>
@@ -290,7 +290,7 @@ const ContactButton = styled.button`
     }
 
     @media (max-width: 425px) {
-      margin-top: 40px;
+      margin-top: 0px;
       font-size: 18px;
       width: 150px;
       height: 40px;

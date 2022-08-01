@@ -138,7 +138,7 @@ const SwiperCerificateImage=styled.img`
   margin: 0 0 40px 0;
 
   @media (max-width: 425px) {
-    max-width: 420px;
-    max-height: 275px;
+    max-width: 400px;
+    max-height: 260px;
   }
 `
