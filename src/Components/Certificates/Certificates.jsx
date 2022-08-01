@@ -113,13 +113,14 @@ const CerificatesBlock = styled.section`
   }
 `
 
-const HeaderBlock = styled.h2`
+const HeaderBlock = styled.p`
   max-width: 1440px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 38px;
+  font-weight: bolder;
   margin: 0 0 80px 0;
   background-image: linear-gradient(90deg, #211338, #fff);
   -webkit-background-clip: text;

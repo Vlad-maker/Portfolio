@@ -43,6 +43,7 @@ const HeaderBlock = styled.section`
       max-width: 425px;
       height: 60px;
       padding: 10px 15px 0 15px;
+      box-sizing: border-box;
     }
 `;
 

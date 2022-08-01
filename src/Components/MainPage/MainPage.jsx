@@ -154,6 +154,7 @@ const MainBlock = styled.section`
   @media (max-width: 425px) {
     max-width: 425px;
     margin-top: 40px;
+    box-sizing: border-box;
   }
 `;
 
