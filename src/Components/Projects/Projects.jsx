@@ -197,6 +197,7 @@ const HeaderBlock = styled.p`
   background-image: linear-gradient(90deg, #E3535D, #2AA5A0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  opacity: 1;
 
   @media (max-width: 425px) {
     font-size: 28px;

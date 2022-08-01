@@ -26,6 +26,7 @@ const FooterBlock = styled.section`
   background-image: linear-gradient(90deg, #E3535D, #2AA5A0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  opacity: 1;
 
   z-index: 10;
 `
