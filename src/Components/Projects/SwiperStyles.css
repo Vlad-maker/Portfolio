@@ -37,7 +37,7 @@
 }
 
 
-@media (max-width: 425px) {
+@media (max-width: 428px) {
   .project__swiper {
     padding: 15px;
     box-sizing: border-box;
@@ -68,5 +68,39 @@
     margin: 0 auto;
     box-sizing: border-box;
   }
+
+}
+
+@media (min-width: 429px) and (max-width: 800px) {
+  /* .project__swiper {
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 18px;
+  }
+
+  .project__swiper_slide {
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-button-prev::after {
+   display: none;
+  }
+
+  .swiper-button-next::after {
+    display: none;
+  }
+
+  .swiper-pagination-bullets {
+    top: 285px;
+  } */
+
+  /* .mySwiperStyle {
+    max-width: 420px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  } */
 
 }

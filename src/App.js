@@ -19,8 +19,8 @@ const App = () => {
         mockSlots={mockSlots}
       />
       <Projects/>
-      <PetProjects/>
-      <Certificates/>
+      {/* <PetProjects/> */}
+      {/* <Certificates/> */}
       <Footer />
     </AppContainer>
   );
@@ -33,4 +33,7 @@ const AppContainer = styled.div`
   min-height: 100vh;
   margin: 0 auto;
   position: relative;
+
 `;
+
+

@@ -38,12 +38,18 @@ const HeaderBlock = styled.section`
   align-items: center;
   justify-content: space-between;
   height: 80px;
+  box-sizing: border-box;
 
-    @media (max-width: 425px) {
+    @media (max-width: 428px) {
       max-width: 425px;
       height: 60px;
       padding: 10px 15px 0 15px;
-      box-sizing: border-box;
+    }
+
+    @media (min-width: 429px) and (max-width: 800px) {
+      max-width: 768px;
+      height: 60px;
+      padding: 10px 15px 0 15px;
     }
 `;
 
@@ -51,7 +57,7 @@ const HeaderLogo = styled.img `
   max-height: 45px;
   max-width: 45px;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
     max-height: 35px;
     max-width: 35px;
   }
@@ -62,9 +68,12 @@ const HeaderCaption = styled.h1`
   margin: 0 0 0 55px;
   color: #d0d3db;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
     font-size: 25px;
-    margin: 0 0 0 55px;
+  }
+
+  @media (min-width: 429px) and (max-width: 800px) {
+    font-size: 35px;
   }
 `
 
@@ -76,7 +85,7 @@ const HeaderSocials = styled.ul `
     justify-content: space-between;
     padding: 0;
 
-    @media (max-width: 425px) {
+    @media (max-width: 428px) {
       max-width: 85px;
     }
 `;

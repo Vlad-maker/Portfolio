@@ -108,7 +108,7 @@ const CerificatesBlock = styled.section`
   justify-content: center;
   align-items: center;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
     margin: 40px 0 0 0;
     max-width: 425px;
   }
@@ -128,7 +128,7 @@ const HeaderBlock = styled.p`
   // -webkit-background-clip: text;
   // -webkit-text-fill-color: transparent;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
     font-size: 28px;
     margin: 0 0 40px 0;
   }
@@ -140,7 +140,7 @@ const SwiperCerificateImage=styled.img`
   object-fit: contain;
   margin: 0 0 40px 0;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
     max-width: 400px;
     max-height: 260px;
   }

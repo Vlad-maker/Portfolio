@@ -179,9 +179,14 @@ const ProjectPage = styled.section`
   flex-direction: column;
   align-items: center;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
     max-width: 425px;
     margin: 60px 0 0 0;
+  }
+
+  @media (min-width: 429px) and (max-width: 800px) {
+    max-width: 768px;
+    margin: 60px auto;
   }
 `
 
@@ -199,10 +204,15 @@ const HeaderBlock = styled.p`
   // -webkit-background-clip: text;
   // -webkit-text-fill-color: transparent;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
     font-size: 28px;
     margin: 0 0 40px 0;
+  }
 
+  @media (min-width: 429px) and (max-width: 800px) {
+    max-width: 768px;
+    margin: 0 auto 40px;
+    font-size: 30px;
   }
 `
 
@@ -214,10 +224,19 @@ const ProjectBlock = styled.div`
   justify-content: space-between;
   margin: 0 0 80px 0;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
     flex-direction: column;
     min-height: 700px;
     margin: 0 0 60px 0;
+    :last-of-type {
+      flex-direction: column-reverse;
+    }
+  }
+
+  @media (min-width: 429px) and (max-width: 800px) {
+    flex-direction: column;
+    // min-height: 700px;
+    // margin: 0 0 60px 0;
     :last-of-type {
       flex-direction: column-reverse;
     }
@@ -237,14 +256,26 @@ const ProjectPartInfo = styled.div`
     text-align: center;
     margin: 0 auto;
   }
+
+  @media (min-width: 429px) and (max-width: 800px) {
+    max-width: 740px;
+    text-align: center;
+    margin: 0 auto;
+    height: 370px;
+  }
 `
 const ProjectPartSlides = styled.div`
   max-width: 880px;
   width: 100%;
   margin: 0;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
     max-width: 400px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 429px) and (max-width: 800px) {
+    max-width: 740px;
     margin: 0 auto;
   }
 `
@@ -254,8 +285,13 @@ const ProjectInfoName = styled.h3`
   margin: 0;
   font-size: 34px;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
     font-size: 24px;
+  }
+
+  @media (min-width: 429px) and (max-width: 800px) {
+    max-width: 740px;
+    font-size: 22px;
   }
 `
 const ProjectInfoLink = styled.a`
@@ -269,6 +305,11 @@ const ProjectInfoLink = styled.a`
   :hover {
     color: #27a182;
   }
+
+  @media (min-width: 429px) and (max-width: 800px) {
+    max-width: 740px;
+    font-size: 20px;
+  }
 `
 const ProjectInfoDescription = styled.p`
   max-width: 500px;
@@ -276,8 +317,14 @@ const ProjectInfoDescription = styled.p`
   font-size: 20px;
   margin: 20px 0 0 0;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
     font-size: 18px;
+    text-align: start;
+  }
+
+  @media (min-width: 429px) and (max-width: 800px) {
+    max-width: 740px;
+    font-size: 20px;
     text-align: start;
   }
 `
@@ -288,7 +335,12 @@ const ProjectInfoCaption = styled.p`
   font-size: 22px;
   margin: 0 0 30px 0;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 429px) and (max-width: 800px) {
+    max-width: 740px;
     font-size: 20px;
   }
 `
@@ -299,7 +351,7 @@ const SwiperImage = styled.img`
   max-height: 410px;
   border-radius: 10px;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
     max-height: 185px;
   }
 `

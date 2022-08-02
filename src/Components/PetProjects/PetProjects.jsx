@@ -222,7 +222,7 @@ const PetProjectMainBlock = styled.section`
   max-width: 1440px;
   width:100%;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
     max-width: 425px;
   }
 `
@@ -242,7 +242,7 @@ const HeaderBlock = styled.p`
   // -webkit-background-clip: text;
   // -webkit-text-fill-color: transparent;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
     max-width: 425px;
     font-size: 28px;
     margin: 0 0 40px 0;
@@ -258,7 +258,7 @@ const Warning = styled.p`
   text-align: center;
   margin: 0 0 20px 0;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
     font-size: 16px;
     max-width: 400px;
     margin: 0 auto 20px;
@@ -272,7 +272,7 @@ const BlockHeading = styled.h3`
   justify-content: center;
   align-items: center;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
     font-size: 22px;
   }
 `
@@ -282,7 +282,7 @@ const PetProjectFlexBlock = styled.div `
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
     justify-content: center;
   }
 `
@@ -305,7 +305,7 @@ const PetProjectBlock = styled.div`
     transition: 0.2s linear;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
     max-width: 400px;
   }
 `
@@ -319,7 +319,7 @@ const PetProjectHeading = styled.div`
   text-align: center;
   cursor: default;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
     display: none;
   }
 `

@@ -150,11 +150,16 @@ const MainBlock = styled.section`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
     max-width: 425px;
     margin-top: 40px;
-    box-sizing: border-box;
+  }
+
+  @media (min-width: 429px) and (max-width: 800px) {
+    max-width: 768px;
+    margin: 40px 0 0 0;
   }
 `;
 
@@ -165,22 +170,32 @@ const AboutMeBlock = styled.div`
   justify-content: space-between;
   flex-direction: row;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
     max-width: 1440px;
     flex-direction: column;
     align-items: center;
+  }
+
+  @media (min-width: 429px) and (max-width: 800px) {
+    max-width: 740px;
+    margin-top: 40px;
   }
 `;
 
 const InfoBlock = styled.div`
 
-@media (max-width: 425px) {
-  max-width: 425px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px 0 0 0;
-}
+  @media (max-width: 428px) {
+    max-width: 425px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 0 0;
+  }
+
+  @media (min-width: 429px) and (max-width: 800px) {
+    max-width: 425px;
+    margin: 0;
+  }
 `
 
 const HeadingBlock = styled.h2 `
@@ -189,9 +204,15 @@ const HeadingBlock = styled.h2 `
   max-width: 720px;
   font-size: 30px;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
     max-width: 425px;
     font-size: 22px;
+  }
+
+  @media (min-width: 429px) and (max-width: 800px) {
+    max-width: 425px;
+    font-size: 26px;
+    text-align: center;
   }
 `
 
@@ -200,10 +221,18 @@ const TextBlock = styled.p `
   max-width: 720px;
   font-size: 22px;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
     margin: 0 0 40px 0;
     max-width: 420px;
     font-size: 18px;
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
+
+  @media (min-width: 429px) and (max-width: 800px) {
+    margin: 0 0 40px 0;
+    max-width: 425px;
+    font-size: 19px;
     text-align: center;
     margin: 0 0 20px 0;
   }
@@ -214,7 +243,11 @@ const SlotsBlock = styled.div `
   margin: 0;
   max-width 720px;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
+    max-width 425px;
+  }
+
+  @media (min-width: 429px) and (max-width: 800px) {
     max-width 425px;
   }
 `
@@ -225,10 +258,15 @@ const SlotsList = styled.ul`
   justify-content: center;
   max-width: 720px;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
     max-width 400px;
     padding: 0 0 0 4px;
     margin: 0 0 40px 0;
+  }
+
+  @media (min-width: 429px) and (max-width: 800px) {
+    max-width 425px;
+    padding: 0;
   }
 `
 const SlotsItem = styled.div `
@@ -244,7 +282,11 @@ const SlotsItem = styled.div `
   display: flex;
   align-items: center;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
+    min-width: 25px;
+  }
+
+  @media (min-width: 429px) and (max-width: 800px) {
     min-width: 25px;
   }
 `
@@ -254,7 +296,12 @@ const SlotItemLogo = styled.img`
   height: 50px;
   background-size: contain;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
+    width: 32px;
+    height: 32px;
+  }
+
+  @media (min-width: 429px) and (max-width: 800px) {
     width: 32px;
     height: 32px;
   }
@@ -269,9 +316,14 @@ const PhotoBlock = styled.img`
   object-fit: cover;
   opacity: 0.8;
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
     width: 375px;
     height: 375px;
+  }
+
+  @media (min-width: 429px) and (max-width: 800px) {
+    width: 280px;
+    height: 280px;
   }
 `
 
@@ -290,11 +342,18 @@ const ContactButton = styled.button`
       transition: 0.2s linear;
     }
 
-    @media (max-width: 425px) {
+    @media (max-width: 428px) {
       margin-top: 0px;
       font-size: 18px;
       width: 150px;
       height: 40px;
+    }
+
+    @media (min-width: 429px) and (max-width: 800px) {
+      margin-top: 40px;
+      font-size: 19px;
+      width: 170px;
+      height: 45px;
     }
 `
 
