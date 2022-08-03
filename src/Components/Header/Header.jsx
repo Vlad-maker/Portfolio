@@ -40,7 +40,13 @@ const HeaderBlock = styled.section`
   height: 80px;
   box-sizing: border-box;
 
-    @media (max-width: 428px) {
+    @media (max-width: 375px) {
+      max-width: 375px;
+      height: 60px;
+      padding: 10px 15px 0 15px;
+    }
+
+    @media (min-width: 376px) and (max-width: 428px) {
       max-width: 425px;
       height: 60px;
       padding: 10px 15px 0 15px;
@@ -50,6 +56,14 @@ const HeaderBlock = styled.section`
       max-width: 768px;
       height: 60px;
       padding: 10px 15px 0 15px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 801px) and (max-width: 1366px) {
+      max-width: 1024px;
+      height: 60px;
+      padding: 10px 15px 0 15px;
+      margin: 0 auto;
     }
 `;
 
@@ -74,6 +88,10 @@ const HeaderCaption = styled.h1`
 
   @media (min-width: 429px) and (max-width: 800px) {
     font-size: 35px;
+  }
+
+  @media (min-width: 801px) and (max-width: 1366px) {
+    font-size: 38px;
   }
 `
 

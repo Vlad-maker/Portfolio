@@ -221,9 +221,20 @@ export default PetProjects;
 const PetProjectMainBlock = styled.section`
   max-width: 1440px;
   width:100%;
+  box-sizing: border-box;
 
-  @media (max-width: 428px) {
+  @media (max-width: 375px) {
+    max-width: 375px;
+  }
+
+  @media (min-width: 376px) and (max-width: 428px) {
     max-width: 425px;
+  }
+
+  @media (min-width: 801px) and (max-width: 1366px) {
+    max-width: 1024px;
+    margin: 0px auto;
+    padding: 0 10px;
   }
 `
 
@@ -247,6 +258,17 @@ const HeaderBlock = styled.p`
     font-size: 28px;
     margin: 0 0 40px 0;
   }
+
+  @media (min-width: 429px) and (max-width: 800px) {
+    margin: 0 auto 40px;
+    font-size: 30px;
+  }
+
+  @media (min-width: 801px) and (max-width: 1366px) {
+    max-width: 1024px;
+    margin: 0 auto 40px;
+    font-size: 30px;
+  }
 `
 
 const Warning = styled.p`
@@ -258,9 +280,19 @@ const Warning = styled.p`
   text-align: center;
   margin: 0 0 20px 0;
 
-  @media (max-width: 428px) {
+  @media (max-width: 375px) {
+    max-width: 360px;
+    margin: 0 auto 20px;
+  }
+
+  @media (min-width: 376px) and (max-width: 428px) {
     font-size: 16px;
     max-width: 400px;
+    margin: 0 auto 20px;
+  }
+
+  @media (min-width: 429px) and (max-width: 800px) {
+    max-width: 740px;
     margin: 0 auto 20px;
   }
 `
@@ -285,6 +317,10 @@ const PetProjectFlexBlock = styled.div `
   @media (max-width: 428px) {
     justify-content: center;
   }
+
+  @media (min-width: 429px) and (max-width: 800px) {
+    justify-content: center;
+  }
 `
 
 const PetProjectBlock = styled.div`
@@ -305,8 +341,20 @@ const PetProjectBlock = styled.div`
     transition: 0.2s linear;
   }
 
-  @media (max-width: 428px) {
+  @media (max-width: 375px) {
+    max-width: 365px;
+  }
+
+  @media (min-width: 376px) and (max-width: 428px) {
     max-width: 400px;
+  }
+
+  @media (min-width: 429px) and (max-width: 800px) {
+    max-width: 740px;
+  }
+
+  @media (min-width: 801px) and (max-width: 1366px) {
+    max-width: 490px;
   }
 `
 

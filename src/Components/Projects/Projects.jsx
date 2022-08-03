@@ -179,13 +179,23 @@ const ProjectPage = styled.section`
   flex-direction: column;
   align-items: center;
 
-  @media (max-width: 428px) {
+  @media (max-width: 375px) {
+    max-width: 375px;
+    margin: 60px 0 0 0;
+  }
+
+  @media (min-width: 376px) and (max-width: 428px) {
     max-width: 425px;
     margin: 60px 0 0 0;
   }
 
   @media (min-width: 429px) and (max-width: 800px) {
     max-width: 768px;
+    margin: 60px auto;
+  }
+
+  @media (min-width: 801px) and (max-width: 1366px) {
+    max-width: 1024px;
     margin: 60px auto;
   }
 `
@@ -214,6 +224,12 @@ const HeaderBlock = styled.p`
     margin: 0 auto 40px;
     font-size: 30px;
   }
+
+  @media (min-width: 801px) and (max-width: 1366px) {
+    max-width: 1024px;
+    margin: 0 auto 40px;
+    font-size: 30px;
+  }
 `
 
 const ProjectBlock = styled.div`
@@ -235,8 +251,13 @@ const ProjectBlock = styled.div`
 
   @media (min-width: 429px) and (max-width: 800px) {
     flex-direction: column;
-    // min-height: 700px;
-    // margin: 0 0 60px 0;
+    :last-of-type {
+      flex-direction: column-reverse;
+    }
+  }
+
+  @media (min-width: 801px) and (max-width: 1366px) {
+    flex-direction: column;
     :last-of-type {
       flex-direction: column-reverse;
     }
@@ -251,7 +272,13 @@ const ProjectPartInfo = styled.div`
   height: 440px;
   margin: 0;
 
-  @media (max-width: 425px) {
+  @media (max-width: 375px) {
+    max-width: 375px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 376px) and  (max-width: 425px) {
     max-width: 400px;
     text-align: center;
     margin: 0 auto;
@@ -263,19 +290,35 @@ const ProjectPartInfo = styled.div`
     margin: 0 auto;
     height: 370px;
   }
+
+  @media (min-width: 801px) and (max-width: 1366px) {
+    max-width: 1024px;
+    text-align: center;
+    margin: 0 auto;
+    height: 330px;
+  }
 `
 const ProjectPartSlides = styled.div`
   max-width: 880px;
   width: 100%;
   margin: 0;
 
-  @media (max-width: 428px) {
+  @media (max-width: 375px) {
+    max-width: 375px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 376px) and  (max-width: 425px) {
     max-width: 400px;
     margin: 0 auto;
   }
 
   @media (min-width: 429px) and (max-width: 800px) {
     max-width: 740px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 801px) and (max-width: 1366px) {
     margin: 0 auto;
   }
 `
@@ -291,6 +334,11 @@ const ProjectInfoName = styled.h3`
 
   @media (min-width: 429px) and (max-width: 800px) {
     max-width: 740px;
+    font-size: 22px;
+  }
+
+  @media (min-width: 801px) and (max-width: 1366px) {
+    max-width: 1024px;
     font-size: 22px;
   }
 `
@@ -310,6 +358,10 @@ const ProjectInfoLink = styled.a`
     max-width: 740px;
     font-size: 20px;
   }
+
+  @media (min-width: 801px) and (max-width: 1366px) {
+    max-width: 1024px;
+  }
 `
 const ProjectInfoDescription = styled.p`
   max-width: 500px;
@@ -325,6 +377,13 @@ const ProjectInfoDescription = styled.p`
   @media (min-width: 429px) and (max-width: 800px) {
     max-width: 740px;
     font-size: 20px;
+    text-align: start;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: 801px) and (max-width: 1366px) {
+    max-width: 1024px;
+    margin-bottom: 20px;
     text-align: start;
   }
 `
@@ -343,6 +402,10 @@ const ProjectInfoCaption = styled.p`
     max-width: 740px;
     font-size: 20px;
   }
+
+  @media (min-width: 801px) and (max-width: 1366px) {
+    max-width: 1024px;
+  }
 `
 
 const SwiperImage = styled.img`
@@ -351,8 +414,16 @@ const SwiperImage = styled.img`
   max-height: 410px;
   border-radius: 10px;
 
-  @media (max-width: 428px) {
+  @media (max-width: 375px) {
+    max-height: 175px;
+  }
+
+  @media (min-width: 376px) and (max-width: 428px) {
     max-height: 185px;
+  }
+
+  @media (min-width: 429px) and (max-width: 800px) {
+    max-height: 325px;
   }
 `
 

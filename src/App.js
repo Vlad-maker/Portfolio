@@ -15,12 +15,12 @@ const App = () => {
   return (
     <AppContainer>
       <Header />
-       <MainPage
+      <MainPage
         mockSlots={mockSlots}
       />
       <Projects/>
-      {/* <PetProjects/> */}
-      {/* <Certificates/> */}
+      <PetProjects/>
+      <Certificates/>
       <Footer />
     </AppContainer>
   );

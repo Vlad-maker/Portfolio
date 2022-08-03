@@ -132,6 +132,12 @@ const HeaderBlock = styled.p`
     font-size: 28px;
     margin: 0 0 40px 0;
   }
+
+  @media (min-width: 429px) and (max-width: 800px) {
+    max-width: 768px;
+    margin: 0 auto 40px;
+    font-size: 30px;
+  }
 `
 
 const SwiperCerificateImage=styled.img`
@@ -143,5 +149,10 @@ const SwiperCerificateImage=styled.img`
   @media (max-width: 428px) {
     max-width: 400px;
     max-height: 260px;
+  }
+
+  @media (min-width: 429px) and (max-width: 800px) {
+    max-width: 740px;
+    max-height: 500px;
   }
 `
